@@ -1,0 +1,80 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+int stack[5]:
+int top=-1;
+void push(int);
+void pop();
+void display();
+void main()
+{
+int ch;
+while(1)
+printf("\n Stack Operation---");
+printf("\n1. Push an element into the stack"); 
+printf("\n2. Pop out an element from the stack"); 
+printf("\n3. Display the stack elements");
+printf(\n4. Exit");
+printf("\n Enter your choice: ");
+scanf("%d",&ch);
+switch(ch)
+case 1: printf("\n Enter the element to be pushed into the stack:"); 
+scanf("%d",&n1);
+ case 1 : push(nl):
+          break;
+case 2: pop();
+         break;
+
+case 3: display();
+        break;
+
+case 4: exit(1);
+default: printf("\n Wrong Choice");
+         break;
+
+}
+}
+} 
+void push(int x)
+{
+if(top==4)
+printf("Stack is FULL");
+}
+{
+else
+top++;
+stack[top]=x;
+}
+
+void pop()
+{
+if(top==-1)
+{
+printf("Stack is EMPTY");
+}
+else
+{
+a= stack[top];
+top--;
+printf("\n %d element popped out of the stack",a); 
+}
+}
+
+void display()
+{
+int i;
+{
+if(top==-1)
+{
+printf("Stack is EMPTY");
+}
+else
+{
+printf("\n Elements in the stack are");
+for(i=top;i>=0;i--)
+{
+printf("\n %d", stack[i]);
+}
+}
+}
+
